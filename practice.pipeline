@@ -1,0 +1,21 @@
+pipeline {
+    agent { 
+        node {
+            label 'docker-agent-python'
+            }
+      }
+    triggers {
+        pollSCM '* * * * *'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                echo "Building.."
+                sh '''
+                Hello.java
+                '''
+            }
+        }
+        
+        }
+}
