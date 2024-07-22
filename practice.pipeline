@@ -18,4 +18,11 @@ pipeline {
         }
         
         }
+        post {
+            always {
+                script {
+                    echo "=========Build URL ${Build_URL}"
+                }
+            }
+        }
 }
