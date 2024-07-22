@@ -23,7 +23,7 @@ pipeline {
                 script {
                     echo "=========Build URL ${Build_URL}"
                     def buildStatus
-                    buildStatus = currentbuild.currentresult
+                    buildStatus =  currentBuild.currentResult
                     echo "Build status: ${buildStatus}"
                 }
             }
