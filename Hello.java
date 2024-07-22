@@ -1,12 +1,13 @@
 public class Hello {
-    static void demo(int a,int b) {
-        int c = a+b;
-        System.out.println(c);
-    }   
+    public static void main(String[] args) {
+        demo.Hars(7,5);
+    }
     }
 
 class demo {
-    public static void main(String[] args) {
-        Hello.demo(7,5);
-    }
+    
+    static void Hars(int a,int b) {
+        int c = a+b;
+        System.out.println(c);
+}
 }
