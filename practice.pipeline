@@ -1,4 +1,4 @@
-import com.sun.net.httpserver.Authenticator
+
 
 pipeline {
     agent { 
@@ -27,7 +27,7 @@ pipeline {
                     def buildStatus
                     buildStatus =  currentBuild.currentResult
                     echo "Build status: ${buildStatus}"
-                    if (buildStatus == "SUCCESS"){
+                    if (buildStatus == "SUCCESS") {
                         currentBuild.result = 'UNSTABLE'
                     }
                 }
