@@ -1,6 +1,6 @@
 public class Hello {
     public static void main(String[] args) {
-        demo.Hars(7,5);
+        demo.Hars(6,5);
     }
     }
 
